@@ -1,4 +1,4 @@
-IMAGE_REPO = seanlim0101/s3-exporter
+IMAGE_REPO = seanlim0101/s3-metrics-exporter
 IMAGE_TAG = dev
 
 build:
