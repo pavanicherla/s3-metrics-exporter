@@ -22,7 +22,7 @@ quickview:
 	docker scout quickview local://${IMAGE_REPO}:${IMAGE_TAG}
 
 run:
-	docker run -dp 8080:8080 ${IMAGE_REPO}:${IMAGE_TAG}
+	docker run -dp 8080:8080 -v "${PWD}/data:/opt/data" ${IMAGE_REPO}:${IMAGE_TAG}
 
 run-interactive:
 	docker run -it -p 8080:8080 --rm ${IMAGE_REPO}:${IMAGE_TAG} bash
