@@ -10,6 +10,9 @@ ARG JQ_VERSION=1.6
 # System modules
 RUN apk update && apk upgrade
 RUN apk add --no-cache \
+    openssl \
+    expat \
+    sqlite \
     bash \
     curl \
     sudo \
