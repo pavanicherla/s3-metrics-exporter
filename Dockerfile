@@ -18,7 +18,7 @@ RUN apk add --no-cache \
     sudo \
     krb5 \
     python3=${PYTHON_VERSION} \
-    py3-pip-23.1.2-r0
+    py3-pip
 
 # Python libraries
 RUN pip3 install --upgrade pip && pip3 install --no-cache-dir \
