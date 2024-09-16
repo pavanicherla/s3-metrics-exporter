@@ -4,7 +4,7 @@ FROM alpine:${ALPINE_VERSION} AS base
 
 USER root
 
-ARG PYTHON_VERSION=3.13.0rc2
+ARG PYTHON_VERSION=3.11.8-r0
 ARG JQ_VERSION=1.6
 
 # System modules
@@ -16,6 +16,7 @@ RUN apk add --no-cache \
     bash \
     curl \
     sudo \
+    krb5 \
     python3=${PYTHON_VERSION} \
     py3-pip
 
