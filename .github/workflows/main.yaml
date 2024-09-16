@@ -19,6 +19,6 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USERNAME}}/s3-metrics-exporter:dev-6
+        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USERNAME}}/s3-metrics-exporter:dev-7
       - name: Docker image push
-        run:  docker push ${{secrets.DOCKER_USERNAME}}/s3-metrics-exporter:dev-6
+        run:  docker push ${{secrets.DOCKER_USERNAME}}/s3-metrics-exporter:dev-7
